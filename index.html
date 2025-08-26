@@ -1,16 +1,75 @@
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" 
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Shop</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        #main {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Стиль для красивой кнопки */
+        #buy {
+            background-color: #4CAF50; /* Зеленый цвет */
+            color: white; /* Цвет текста */
+            border: none; /* Без рамки */
+            padding: 15px 30px; /* Внутренние отступы */
+            font-size: 16px; /* Размер шрифта */
+            border-radius: 8px; /* Скругление углов */
+            cursor: pointer; /* Курсор при наведении */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Эффект при наведении на кнопку */
+        #buy:hover {
+            background-color: #45a049; /* Более темный зеленый */
+            transform: translateY(-2px);
+        }
+
+        /* Эффект при клике (активное состояние) */
+        #buy:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+    </style>
 </head>
 <body>
 <div id="main">
     <h1>Онлайн магазин</h1>
-    <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png">
+    <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" alt="Иконка магазина">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
        Accusantium ipsum magni, molestias.</p>
     <button id="buy">Купить</button>
